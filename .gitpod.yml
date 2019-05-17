@@ -2,6 +2,7 @@ image:
   file: Dockerfile
 tasks:
   - before: mongod --journal
-  - init: cd pritrox/expresscart/ ; npm install ; npm start
+#  - init: cd pritrox/expresscart/ ; npm install ; npm start
 ports:
   - port: 27017
+  - port: 80
