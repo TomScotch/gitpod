@@ -1,7 +1,6 @@
 image:
   file: Dockerfile
 tasks:
-  - before: apt update ; apt install mongodb -y
-  - before: mongod --journal
+  - init: mongod --journal
 ports:
   - port: 27017
