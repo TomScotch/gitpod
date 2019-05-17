@@ -1,5 +1,4 @@
-image:
-  file: gitpod.dockerfile
+image: mongodb
 tasks:
   - before: mongod --bind_ip 0.0.0.0 --journal
   - init: cd pritrox/expresscart/ ; npm install ; npm start
