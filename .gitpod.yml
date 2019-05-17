@@ -1,8 +1,8 @@
 image:
-  file: Dockerfile
+  file: gitpod.dockerfile
 tasks:
-  - before: mongod --journal
-#  - init: cd pritrox/expresscart/ ; npm install ; npm start
+  - before: mongod --bind_ip 0.0.0.0 --journal
+  - init: cd pritrox/expresscart/ ; npm install ; npm start
 ports:
   - port: 27017
   - port: 80
