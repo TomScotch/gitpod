@@ -1,4 +1,5 @@
 FROM ubuntu
+USER root
 FROM gitpod/workspace-full
 RUN apt-get update ; apt-get install mongodb -y
 RUN mkdir /data/db ; chown gitpod /data/db
