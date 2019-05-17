@@ -1,5 +1,4 @@
 FROM gitpod/workspace-full
-COPY
 USER root
 RUN apt-get update && apt-get install -y \
         apt install mongodb -y \
