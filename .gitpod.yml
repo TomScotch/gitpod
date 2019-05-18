@@ -2,7 +2,7 @@ image:
   file: gitpod.dockerfile
 
 tasks:
-  - command: service mongodb stop ; cp mongodb.conf /etc/ -f ; mongod --journal --bind_ip 0.0.0.0 --port 27017;
+  - command: service mongodb stop ; cp pritrox/mongodb.conf /etc/ -f ; mongod --journal --bind_ip 0.0.0.0 --port 27017;
   - command: cd /workspace/gitpod/pritrox/expresscart/ ; npm start
 
 ports:
