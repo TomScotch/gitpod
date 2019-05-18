@@ -1,0 +1,6 @@
+node_modules/
+pritrox/
+data/
+/config/settings-local.json
+.vscode
+**.DS_Store
