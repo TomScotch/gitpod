@@ -8,4 +8,3 @@ ports:
   - port: 22
   - port: 27017
   - port: 3000
-    onOpen: open-preview
